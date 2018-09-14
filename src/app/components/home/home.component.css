@@ -1,7 +1,6 @@
 .center{
-    max-width: 400px;
-    height: 100px;
-    margin: 10px auto;
+   
+    position: absolute;
 }
 
 .main-div{
