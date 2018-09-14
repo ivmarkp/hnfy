@@ -9,7 +9,7 @@ Hacker News is a great place to find some interesting articles on the web, parti
 Since, it is community driven, often front page stories that community collectively finds interesting might not be so for me. Hnfy tries to solve that problem for me and also because I wanted such a thing to exist.
 
 ### How?
-Trained a topic model on 100K stories titles using LDA, a popular topic modeling technique, to extract some 50 groups of salient keywords. I call these "Reference Topics". Each group of keywords would fall into one or more topics e.g. Blockchain, Security, Programming etc. if you were to annotate them manually. A very large dataset of HN submissions is available on [Google BigQuery](https://bigquery.cloud.google.com/dataset/bigquery-public-data:hacker_news) that I used for training LDA model. A cleaned 2M story titles are available in [this](https://github.com/ivmarkp/hnx) repository where I've kept the backend code.
+Trained a topic model on 100K stories titles using LDA, a popular topic modeling technique, to extract some 50 groups of salient keywords. I call these "Reference Topics". Each group of keywords would fall into one or more topics e.g. Blockchain, Security, Programming etc. if you were to annotate them manually. A very large dataset of HN submissions is available on [Google BigQuery](https://bigquery.cloud.google.com/dataset/bigquery-public-data:hacker_news) that I used for training LDA model. A cleaned 2M story titles are available in the data folder in [this](https://github.com/ivmarkp/hnx) repository where I've kept the backend code.
 
 A few examples out of those extracted topics with non-stemmed keywords:
 
