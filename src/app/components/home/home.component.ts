@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
 
   sanityCheck() {
     this.checkSubmissions().subscribe(data => {
-      if (data.nbHits > 20) {
+      if (data.nbHits >= 20) {
         this.showHeader = true;
         this.dataService.changeHeaderState(this.showHeader);
         this.router.navigate(['/top']);
