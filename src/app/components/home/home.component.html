@@ -1,0 +1,13 @@
+<div class="main-div">
+    <mat-card class="z-depth center" flex="50" [class.mat-elevation-z8]="true">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+            <mat-form-field>
+                <input matInput placeholder="Enter your HN username" name="input" ngModel>
+            </mat-form-field>
+            <br>
+            <div style="width: 50%; margin: 0 auto;">
+                <button type='submit' class='go-button' mat-stroked-button color="warn">Go</button>
+            </div>
+        </form>
+    </mat-card>
+</div>

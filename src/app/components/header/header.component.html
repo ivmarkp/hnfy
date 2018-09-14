@@ -1,0 +1,22 @@
+<header class="header">
+    <nav class="inner">
+        <div class="container-logo" style="width: 15%;">
+        <a href="">
+            <span>
+            HN For You
+            </span>
+        </a>
+        </div>
+        <div class="fadein" style="width: 85%;">
+        <div style="float: left;">
+            <a routerLink="top" (click)="scrollTop()" routerLinkActive="active">Top</a>
+            <a routerLink="new" (click)="scrollTop()" routerLinkActive="active">New</a>
+            <a routerLink="show" (click)="scrollTop()" routerLinkActive="active">Show</a>
+            <a routerLink="ask" (click)="scrollTop()" routerLinkActive="active">Ask</a>
+        </div>
+        <div>
+            <a class="github" style="float: right;" target="_blank" href="https://www.github.com/ivmarkp/hnfy"><fa name="github-alt"></fa> About</a>
+        </div>
+        </div>
+    </nav>
+</header>
