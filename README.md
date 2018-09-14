@@ -23,3 +23,9 @@ In order to determine user's interests, I only have his/her submitted stories (b
 2. An LDA model is trained on user's submissions and from 10 extracted topics, top keywords are picked and stemmed.
 3. Next, these top keywords are searched in the pre-computed reference topics. All ref-topics that those keywords fall into are selected as the user's interests topics. So, the purpose of ref-topics was to expand the keyword dictionary of user interests topics.
 4. Finally, current HN stories are fetched using the Algolia API. For each story, title is tokenized and stemmed. These stemmed tokens are matched with the user's interests topics keywords. Stories with successful matches are displayed along with the topics that they belongs to.
+
+### Credits
+
+* [HN Algolia Search](https://github.com/algolia/hn-search)
+* [Google BigQuery](https://bigquery.cloud.google.com)
+* [NgxSpinner](https://github.com/Napster2210/ngx-spinner)
