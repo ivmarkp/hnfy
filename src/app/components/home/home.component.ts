@@ -37,25 +37,21 @@ export class HomeComponent implements OnInit {
 
   sanityCheck() {
     this.checkSubmissions().subscribe(data => {
-      console.log(data);
       if (data.nbHits > 20) {
         this.showHeader = true;
-        debugger;
         this.dataService.changeHeaderState(this.showHeader);
         this.router.navigate(['/top']);
       }
       else {
-        console.log('No submissions found.');
+        console.log('Insufficient submissions found.');
         this.openDialog();
       }
-      console.log(this.showHeader)
     })
   }
 
 
   onSubmit(f: NgForm) {
     this.username = f.value.input;
-    console.log('USERR');
     this.dataService.changeMessage(this.username);
     this.sanityCheck();
   }
@@ -68,8 +64,6 @@ export class HomeComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      // this.router.navigateByUrl('error', {skipLocationChange: true}).then(()=>
-      // this.router.navigate(['']));
     });
   }
 }

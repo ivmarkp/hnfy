@@ -12,6 +12,5 @@ export class AppComponent {
   showHeader = false;
   constructor(private dataService:  DataService) {
     this.dataService.currentHeaderState.subscribe(message => this.showHeader = message);
-    console.log('SHOW HEADER APP: ', this.showHeader);
   }
 }

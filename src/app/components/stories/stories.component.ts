@@ -25,8 +25,6 @@ export class StoriesComponent implements OnInit {
     this.spinner.show();
     this.dataService.currentMessage.subscribe(message => this.userid = message)
     this.feedType = this.route.snapshot.data['feedType'];
-    console.log(this.feedType);
-    console.log('USER');
     this.getStories();
   }
 
@@ -52,9 +50,7 @@ export class StoriesComponent implements OnInit {
 
   getStories() {
     this.fetchStories().subscribe(data => {
-      console.log(data);
       this.stories = data.stories;
-      console.log(this.stories);
       this.stories = this.shuffle(this.stories);
       this.spinner.hide();
     });
