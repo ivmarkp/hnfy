@@ -4,7 +4,7 @@
 A webapp to recommend HN stories based on user's topics of interest collated from their own submitted stories on Hacker News.
 
 ### Why?
-Hacker News is a great place to find some interesting articles on the web, particularly for people in STEM. Community membbers submit links to stories on the web (e.g. news articles, blog posts, research papers etc.). Members can upvote stories that they find interesting and if a story receives many upvotes it rises to the top and starts appearing on the front page.
+Hacker News is a great place to find some interesting articles on the web, particularly for people in STEM. Community members submit links to stories on the web (e.g. news articles, blog posts, research papers etc.). Members can upvote stories that they find interesting and if a story receives many upvotes it rises to the top and starts appearing on the front page.
 
 Since, it is community driven, often front page stories that community collectively finds interesting might not be so for me. Hnfy tries to solve that problem for me and also because I wanted such a thing to exist.
 
